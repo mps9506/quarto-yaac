@@ -1,0 +1,20 @@
+title: Quarto-yaac
+author: Michael Schramm
+version: 1.0.0
+quarto-required: ">=1.2.0"
+contributes:
+  formats:
+    pdf:
+      toc: false
+      include-in-header: header.tex
+      pdf-engine: lualatex
+      template: quarto-yaac.tex
+      documentclass: yaac-another-awesome-cv
+      filters: 
+        - "sectiontitle.lua"
+        - "list-table.lua"
+        - "table-rules.lua"
+      ptsize: 10pt #can use 10pt, 11pt, 12pt
+      color: red #green, red, indigo, orange, monochorome
+      cite-method: citeproc
+

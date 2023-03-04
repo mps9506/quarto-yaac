@@ -1,0 +1,74 @@
+% !TEX TS-program = luatex
+% Awesome Source CV LaTeX Template
+%
+% This template has been downloaded from:
+% https://github.com/darwiin/awesome-neue-latex-cv
+%
+% Author:
+% Christophe Roger (Darwiin)
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+
+\documentclass[localFont,alternative,$ptsize$,$color$,compact]{$documentclass$}
+$if(csl-refs)$
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+% For Pandoc 2.8 to 2.11
+\newenvironment{cslreferences}%
+  {$if(csl-hanging-indent)$\setlength{\parindent}{0pt}%
+  \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces$endif$}%
+  {\par}
+% For pandoc 2.11+ using new --citeproc
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1 \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces\fi
+  % set entry spacing
+  \ifnum #2 > 0
+  \setlength{\parskip}{#2\baselineskip}
+  \fi
+ }%
+ {}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+$endif$
+\name{$firstname$}{$lastname$}
+\tagline{$tagline$}
+\photo{2.5cm}{$photo$}
+\socialinfo{
+	$if(linkedin)$\linkedin{$linkedin$}$endif$
+	$if(github)$\github{$github$}\\$endif$
+	$if(website-name)$\website{$website-name$}{$website-address$}\\$endif$
+	$if(smartphone)$\smartphone{$smartphone$}\\$endif$
+	$if(email)$\email{$email$}\\$endif$
+	$if(address)$\address{$address$}\\$endif$
+	$if(infos)$\infos{$infos$}$endif$
+}
+
+\usepackage{booktabs}
+\def\toprule{}
+\def\bottomrule{}
+\def\midrule{}
+% Uncomment the following line and use a value from 1.5cm to 2.5cm
+% \setleftcolumnlength{2.5cm}
+
+
+\begin{document}
+
+	\makecvheader
+
+	\makecvfooter
+		{\textsc{\selectlanguage{english}\today}}
+		{\textsc{$firstname$ $lastname$ - Resume}}
+		{\thepage}
+
+$body$
+
+\end{document}

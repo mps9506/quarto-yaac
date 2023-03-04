@@ -1,0 +1,139 @@
+---
+title: YAAC-CV
+format:
+  quarto-yaac-pdf:
+    color: monochrome #green, red, indigo, orange, monochorome
+    ptsize: 10pt #10pt, 11pt, 12pt
+firstname: William
+lastname: Gosset
+tagline: Brewmaster and Student
+#linkedin: optional linkedin username
+#website-name: quarto.org # optional website name
+#website-address: quarto.org # optional website address
+#github: github #optional github username
+smartphone: 1-(234)-567-8901
+email: guinness@customer-care.net
+address: Guinness Brewery · Park Royal · London NW10 7RR, UK
+#infos: optional additional info 
+photo: resources/William_Sealy_Gosset # optional photo
+date: last-modified
+nocite: '@*'
+bibliography: "peer_bib.bib"
+csl: apa-cv.csl
+---
+
+Established scientist working on experimental design and small sample statistics 
+with an applied focus on agricultural and brewery research experiments.
+
+<!-- 
+Use the class `.sectiontitle` to format first level headings
+Use .fa<Font> to insert a fontawesome icon, a list of 
+icons are included: http://mirrors.ctan.org/fonts/fontawesome5/doc/fontawesome5.pdf
+-->
+
+# Skills {.sectiontitle .faTasks}
+
+<!--
+The yaac document class provides a `keywords` environment. 
+The easiest way to use it right now is to enter skills in latex code blocks.
+-->
+
+```{=latex}
+\begin{keywords}
+
+  \keywordsentry{Brewing}{Barley, Chemistry, Stouts}
+  \keywordsentry{Statistics}{Experimental Design, Uncertainty, t-distribution}
+
+\end{keywords}
+```
+
+# Experience {.sectiontitle .faSuitcase}
+
+<!--The yaac document class provides an `experiences` environment: -->
+
+```{=latex}
+\begin{experiences}
+
+  \experience
+    {enddate}   {position title}{organization}{location}
+    {startdate} {
+                      \begin{itemize}
+                        \item I did amazing stuff
+                        \item I did more amazing stuff
+                        \item Here are some KPIs
+                        \item Did I mention I did amazing things  
+                      \end{itemize}
+                    }
+                    {quarto,python,R,latex}
+  \emptySeparator
+    
+  \experience
+    {1935}   {Experimental Brewer}{Guinness and Son}{Dublin}
+    {1899} {
+                      \begin{itemize}
+                        \item Design experiments
+                        \item Develop practical stat methods
+                      \end{itemize}
+                    }
+                    {quarto,python,R,latex}
+
+\end{experiences}
+```
+
+
+
+# Education {.sectiontitle .faGraduationCap}
+
+```{=latex}
+\begin{scholarship}
+	\scholarshipentry{1899}
+					{Mathematics and Chemistry, New College Oxford}
+\end{scholarship}
+```
+
+
+
+# Selected Peer-Reviewed Publications {.sectiontitle .faFile}
+
+:::{#refs}
+:::
+
+# Software Projects {.sectiontitle .faLaptop}
+
+```{=latex}
+\begin{projects}
+	\project
+	{quarto}{2020 - current}
+	{\github{quarto-dev/quarto-cli} \website{https://quarto.org}{https://quarto.org}} 
+	{Open-source scientific and technical publishing system built on Pandoc.}
+	{R,Python,Julia,Observable,\LaTeX}
+				
+	\project
+	{YAAC Another Awesome CV}{2013 - 2018}
+	{\github{darwiin/yaac-another-awesome-cv} \website{https://www.overleaf.com/latex/templates/awesome-source-cv/wrdjtkkytqcw}{Template sur Overleaf}}
+	{Template \LaTeX pour Curiculum Vitæ utilisant les icônes \href{https://fontawesome.com}{Font Awesome} et la police de caractère \href{https://fonts.google.com/specimen/Source+Sans+Pro}{Adobe Source Sans Pro}. YAAC Another Awesome CV a d'abord été créé comme un template simple pour CV à vocation technologique.}
+	{\LaTeX,Sublime Text}
+
+\end{projects}
+
+```
+
+# References {.sectiontitle .faQuoteLeft}
+
+```{=latex}
+\begin{referees}
+	\referee
+		{Jerzy Neyman}
+		{Pofessor}
+		{University College}
+		{jn@compuserve.com}
+		{+687 987 654}
+	\referee
+		{Karl Pearson}
+		{Professor}
+		{Gresham College}
+		{kp@compuserve.com}
+		{+687 987 654}
+\end{referees}
+```
+
