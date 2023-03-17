@@ -11,8 +11,9 @@ contributes:
       template: quarto-yaac.tex
       documentclass: yaac-another-awesome-cv
       filters: 
-        - "sectiontitle.lua"
         - "list-table.lua"
+        - "multiple-bibliographies.lua"
+        - "sectiontitle.lua"
         - "table-rules.lua"
       ptsize: 10pt #can use 10pt, 11pt, 12pt
       color: red #green, red, indigo, orange, monochorome
