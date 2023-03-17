@@ -6,7 +6,7 @@ contributes:
   formats:
     pdf:
       toc: false
-      include-in-header: header.tex
+      #include-in-header: header.tex
       pdf-engine: lualatex
       template: quarto-yaac.tex
       documentclass: yaac-another-awesome-cv
