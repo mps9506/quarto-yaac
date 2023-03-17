@@ -41,7 +41,7 @@ $if(csl-refs)$
 $endif$
 \name{$firstname$}{$lastname$}
 \tagline{$tagline$}
-\photo{2.5cm}{$photo$}
+$if(photo)$\photo{2.5cm}{$photo$}$endif$
 \socialinfo{
 	$if(linkedin)$\linkedin{$linkedin$}$endif$
 	$if(github)$\github{$github$}\\$endif$
