@@ -11,6 +11,7 @@
 % CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
 
 \documentclass[localFont,alternative,$ptsize$,$color$,compact]{$documentclass$}
+
 $if(csl-refs)$
 \newlength{\cslhangindent}
 \setlength{\cslhangindent}{1.5em}
@@ -39,9 +40,10 @@ $if(csl-refs)$
 \newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}}
 \newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
 $endif$
+
 \name{$firstname$}{$lastname$}
 \tagline{$tagline$}
-$if(photo)$\photo{2.5cm}{$photo$}$endif$}
+$if(photo)$\photo{2.5cm}{$photo$}$endif$
 \socialinfo{
 	$if(linkedin)$\linkedin{$linkedin$}$endif$
 	$if(github)$\github{$github$}\\$endif$
