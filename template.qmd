@@ -95,8 +95,10 @@ The easiest way to use it right now is to enter skills in latex code blocks.
 
 # Selected Peer-Reviewed Publications {.sectiontitle .faFile}
 
+\begin{publications}
 :::{#refs}
 :::
+\end{publications}
 
 # Software Projects {.sectiontitle .faLaptop}
 
