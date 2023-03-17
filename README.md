@@ -1,4 +1,4 @@
-# Quarto-yaac Format
+# quarto-yaac Format
 
 This is a mostly LaTeX template right now. If you want to use just
 markdown, this isn't the template to use. I'm trying to work on some lua

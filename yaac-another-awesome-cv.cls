@@ -163,10 +163,10 @@
     ItalicFont= Source Sans Pro Light Italic]
 }
 {
-  \setmainfont{SourceSansPro-Light}[
+  \setmainfont{SourceSansPro-Light.otf}[
     Path = fonts/,
-    BoldFont = SourceSansPro-Regular,
-    ItalicFont = SourceSansPro-LightIt]
+    BoldFont = SourceSansPro-Regular.otf,
+    ItalicFont = SourceSansPro-LightIt.otf]
 }
 
 %New length definition
@@ -545,23 +545,23 @@
 }
 
 %% Bibliography
-\usepackage[backend=bibtex,style=authoryear,natbib=true]{biblatex} 
-
-\newcounter{bibitem}
-\AtBeginBibliography{\setcounter{bibitem}{1}}
-\AtEveryBibitem{\hspace{1em}\makebox[1.5em][l]{{\thebibitem}\stepcounter{bibitem}.}}
-
-\setlength{\bibitemsep}{1.5ex}
-\setlength{\bibhang}{2.7em}
-\NewBibliographyString{retrieved}
-\NewBibliographyString{from}
-
-\urlstyle{tt}
-
-\def\@subbibfont{\large\color{accentcolor}}
-\newcommand\subbibfont[1]{\gdef\@subbibfont{#1}}
-\defbibheading{subbibliography}{\vskip 5pt {\@subbibfont\hspace{0pt}#1}\par}
-
-\defbibfilter{booksandchapters}{%
-( type=book or type=incollection )
-}
+% \usepackage[backend=bibtex,style=authoryear,natbib=true]{biblatex} 
+% 
+% \newcounter{bibitem}
+% \AtBeginBibliography{\setcounter{bibitem}{1}}
+% \AtEveryBibitem{\hspace{1em}\makebox[1.5em][l]{{\thebibitem}\stepcounter{bibitem}.}}
+% 
+% \setlength{\bibitemsep}{1.5ex}
+% \setlength{\bibhang}{2.7em}
+% \NewBibliographyString{retrieved}
+% \NewBibliographyString{from}
+% 
+% \urlstyle{tt}
+% 
+% \def\@subbibfont{\large\color{accentcolor}}
+% \newcommand\subbibfont[1]{\gdef\@subbibfont{#1}}
+% \defbibheading{subbibliography}{\vskip 5pt {\@subbibfont\hspace{0pt}#1}\par}
+% 
+% \defbibfilter{booksandchapters}{%
+% ( type=book or type=incollection )
+% }
