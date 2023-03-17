@@ -163,10 +163,10 @@
     ItalicFont= Source Sans Pro Light Italic]
 }
 {
-  \setmainfont{SourceSansPro-Light}[
+  \setmainfont{SourceSansPro-Light.otf}[
     Path = fonts/,
-    BoldFont = SourceSansPro-Regular,
-    ItalicFont = SourceSansPro-LightIt]
+    BoldFont = SourceSansPro-Regular.otf,
+    ItalicFont = SourceSansPro-LightIt.otf]
 }
 
 %New length definition
