@@ -3,14 +3,14 @@ title: YAAC-CV
 format:
   quarto-yaac-pdf:
     color: monochrome #green, red, indigo, orange, monochorome
-    ptsize: 10pt #10pt, 11pt, 12pt
+    ptsize: 11pt #10pt, 11pt, 12pt
 firstname: William
 lastname: Gosset
 tagline: Brewmaster and Student
 #linkedin: optional linkedin username
-#website-name: quarto.org # optional website name
-#website-address: quarto.org # optional website address
-#github: github #optional github username
+website-name: quarto.org # optional website name
+website-address: quarto.org # optional website address
+github: github #optional github username
 smartphone: 1-(234)-567-8901
 email: guinness@customer-care.net
 address: Guinness Brewery · Park Royal · London NW10 7RR, UK
@@ -23,7 +23,11 @@ csl: apa-cv.csl
 ---
 
 Established scientist working on experimental design and small sample statistics 
-with an applied focus on agricultural and brewery research experiments.
+with an applied focus on agricultural and brewery research experiments. Lorem 
+ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget 
+dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient 
+montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque 
+eu, pretium quis, sem. Nulla consequat massa quis enim.
 
 <!-- 
 Use the class `.sectiontitle` to format first level headings
@@ -95,10 +99,11 @@ The easiest way to use it right now is to enter skills in latex code blocks.
 
 # Selected Peer-Reviewed Publications {.sectiontitle .faFile}
 
-\begin{publications}
+
 :::{#refs}
 :::
-\end{publications}
+
+
 
 # Software Projects {.sectiontitle .faLaptop}
 
