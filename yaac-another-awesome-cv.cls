@@ -178,6 +178,9 @@
     ItalicFont = SourceCodePro-LightItalic.ttf]
 }
 
+%url format%
+\urlstyle{same}
+
 %New length definition
 \newlength{\fulllength}
 \setlength{\fulllength}{17.8cm}

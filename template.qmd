@@ -2,7 +2,7 @@
 title: YAAC-CV
 format:
   quarto-yaac-pdf:
-    classoption: localFont, alternative, red, 10pt, compact
+    classoption: localFont, alternative, red, 10pt, compact, showLinks
 firstname: William
 lastname: Gosset
 tagline: Brewmaster and Student

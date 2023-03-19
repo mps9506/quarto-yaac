@@ -121,6 +121,7 @@ Here is the source code for a minimal sample document: [template.qmd](template.q
      way of building document references.
   -  Added colored links when an accent color is defined and showLinks option
      is used.
+  -  fixed url formatting to be the same as the main font and hyperref.
 
 # v1.0.0
 
