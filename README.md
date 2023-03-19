@@ -58,11 +58,16 @@ Plenty of formatting options that can be set in the document yaml:
 title: YAAC-CV
 format:
   quarto-yaac-pdf:
-    ## Set header colors to one of: ##
-    ## green, red, indigo, orange, monochorome ##
-    color: monochrome
-    ## Set font size to: 10pt, 11pt, or 12pt ##
-    ptsize: 10pt
+    ## available document class options include:
+    ## localFont, which uses the included Source Sans Pro font;
+    ## alternative, which provides an alternative document layout (recommended);
+    ## one of the following accent colors: green, red, indigo, orange, monochorome;
+    ## if accent color is undefined, it will be blue;
+    ## one of the following pt sizes: 10pt, 11pt, 12pt;
+    ## showLinks, which highlights links in the pdf;
+    ## compact, which changes seperator spacing;
+    classoption: localFont, alternative, red, 10pt, compact
+
 firstname: William
 lastname: Gosset
 
@@ -100,4 +105,26 @@ csl: apa-cv.csl
 ## Example
 
 Here is the source code for a minimal sample document: [template.qmd](template.qmd).
+
+
+## Version History
+
+```
+# v1.0.1
+
+  -  Added lua filter support for multiple bibliographies.
+  -  Added support for all document class options in the template tex.
+  -  Fixed bug where local Source Sans Pro fonts were not recognized and only
+     loaded via LaTeX package.
+  -  Added Source Sans Code font for monospaced fonts.
+  -  Fixed bug where biblatex was running even though citeproc is the specified
+     way of building document references.
+  -  Added colored links when an accent color is defined and showLinks option
+     is used.
+
+# v1.0.0
+
+ - Initial release.
+ - Bundled the yaac-another-awesome-cv document class in a quarto template.
+```
 

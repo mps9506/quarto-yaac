@@ -10,7 +10,7 @@
 % Template license:
 % CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
 
-\documentclass[localFont,alternative,$ptsize$,$color$,compact]{$documentclass$}
+\documentclass[$for(classoption)$$classoption$$sep$,$endfor$]{$documentclass$}
 
 $if(csl-refs)$
 \newlength{\cslhangindent}

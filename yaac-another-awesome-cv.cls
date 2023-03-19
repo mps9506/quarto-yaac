@@ -112,11 +112,13 @@
 \colorlet{symbolcolor}{linkcolor!85}
 
 % Setup hyperref package, and colours for links
-%\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
 
 \if@showLinks
   \hypersetup{%
-    breaklinks
+    colorlinks=true,
+    breaklinks=true,
+    urlcolor=linkcolour
   }%
 \else
   \hypersetup{%
@@ -167,6 +169,13 @@
     Path = fonts/,
     BoldFont = SourceSansPro-Regular.otf,
     ItalicFont = SourceSansPro-LightIt.otf]
+}
+
+{
+  \setmonofont{SourceCodePro-Light.ttf}[
+    Path = fonts/,
+    BoldFont = SourceCodePro-Regular.ttf,
+    ItalicFont = SourceCodePro-LightItalic.ttf]
 }
 
 %New length definition

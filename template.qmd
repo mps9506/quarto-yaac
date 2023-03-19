@@ -2,8 +2,7 @@
 title: YAAC-CV
 format:
   quarto-yaac-pdf:
-    color: monochrome #green, red, indigo, orange, monochorome
-    ptsize: 11pt #10pt, 11pt, 12pt
+    classoption: localFont, alternative, red, 10pt, compact
 firstname: William
 lastname: Gosset
 tagline: Brewmaster and Student

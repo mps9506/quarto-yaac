@@ -10,12 +10,10 @@ contributes:
       pdf-engine: lualatex
       template: quarto-yaac.tex
       documentclass: yaac-another-awesome-cv
+      classoption: localFont, alternative, showLinks, monochrome, 11pt, compact
       filters: 
         - "list-table.lua"
         - "multiple-bibliographies.lua"
         - "sectiontitle.lua"
         - "table-rules.lua"
-      ptsize: 10pt #can use 10pt, 11pt, 12pt
-      color: red #green, red, indigo, orange, monochorome
-      cite-method: citeproc
 
