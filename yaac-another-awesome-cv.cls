@@ -169,6 +169,13 @@
     ItalicFont = SourceSansPro-LightIt.otf]
 }
 
+{
+  \setmonofont{SourceCodePro-Light.ttf}[
+    Path = fonts/,
+    BoldFont = SourceCodePro-Regular.ttf,
+    ItalicFont = SourceCodePro-LightItalic.ttf]
+}
+
 %New length definition
 \newlength{\fulllength}
 \setlength{\fulllength}{17.8cm}
